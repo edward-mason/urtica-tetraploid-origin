@@ -1,0 +1,19 @@
+{
+ "mode": "female",
+ "n_genes": 16685,
+ "acro_sig_gradient": 5,
+ "mean_T_acro": 0.6694278561548161,
+ "mean_T_poly": 0.3759073235245304,
+ "perm_p": 1.0,
+ "perm_total": 792,
+ "mean_rho_end_poly": -0.3708126461743437,
+ "mean_rho_end_acro": -0.1112917737547093,
+ "mean_rho_acro": 0.22627252453575464,
+ "mean_rho_poly": 0.39284294233025235,
+ "chr10_T": 0.39804862281078973,
+ "perm_p_reverse": 0.0012626262626262627,
+ "mean_T_excl2Mb_acro": 0.741984888037012,
+ "mean_T_excl2Mb_poly": 0.4050032763968002,
+ "diff_T_excl2Mb": 0.3369816116402118,
+ "verdict": "falsified"
+}

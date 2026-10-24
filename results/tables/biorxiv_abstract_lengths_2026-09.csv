@@ -1,0 +1,6 @@
+set,n,p10,p25,median,p75,p90,pct_over_300,pct_over_ours
+all bioRxiv (Sept 2026),5693,147,169,204,245,278,5.8,2.1
+genomics,201,145,173,203,243,274,4.0,1.0
+evolutionary biology,246,159,188,216,248,273,4.9,1.2
+plant biology,188,155,182,214,246,264,4.3,1.1
+genetics,129,149,176,200,242,267,2.3,1.6

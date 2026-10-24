@@ -1,0 +1,33 @@
+check,value
+H1 n genes (reviewer / claim),13438 / 13439
+median b,0.00449
+median t,0.00497
+R (reviewer),1.106
+Q99(b),0.0269
+f99 (reviewer),0.01667
+R chromosome-bootstrap CI,1.064-1.159
+R 10-Mb-block CI,1.071-1.159
+R chr3/5/6 only (PAT=MH1),1.052 (CI 1.003-1.118)
+R other 10 chr (PAT=MH2 query),1.120
+mat_floor exactly 0 fraction,0.998
+genes excluded only by DP ratio2>=0.8,3027
+excluded genes R / f99,1.107 / 0.052
+2nd locus 90-97% cov2>=0.8: DP/FH1/FH2,0.103/0.095/0.098
+2nd locus >=97% cov2>=0.8: DP/FH1/FH2,0.223/0.102/0.096
+DP-specific duplicates n (frac),2905 (0.126)
+DP-specific dup pident2 median,98.93
+windowed median(t-b) max chr8 / chr7 / null99,0.0094 / 0.0061 / 0.0037
+"chr8 block b,W,t","0.0010,0.0078,0.0063"
+"chr7 block b,W,tA,t,d(DP,DA)","0.0010,0.0011,0.0017,0.0060,0.0055"
+windowed median t max,0.0125
+DA genes tA>5% (paralog hits),"220; d(DA,UU) 0.231"
+f99 genes median b / frac b>Q95,0.0109 / 0.42
+dip test run?,no (ModuleNotFoundError in both JSONs)
+BN >=3 loci,0.239
+FH1+FH2 concatenated >=3 loci lower bound,0.107
+single-haplotype diploid >=3 loci,0.064-0.077
+R_BN (23125 genes),0.973
+DToL k-mer completeness primary/alt/combined (note),0.55/0.494/0.68
+"expected auto one/two haps (pi=0.005,k=31)",0.752/0.879
+expected allo two haps delta=1%/1.5%,0.750/0.641
+diploid completeness one/both (Hirabayashi 2025),0.817/0.9815

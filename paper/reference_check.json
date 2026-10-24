@@ -1,0 +1,200 @@
+[
+ {
+  "key": "rejlova2019",
+  "doi": "10.1371/journal.pone.0218389",
+  "title": "Polyploid evolution: The ultimate way to grasp the nettle",
+  "year": 2019,
+  "journal": "PLOS ONE",
+  "first_author": "Rejlov\u00e1",
+  "volume": "14",
+  "crossref": true,
+  "doi_org": 302
+ },
+ {
+  "key": "rejlova2020",
+  "doi": "10.1093/botlinnean/boaa076",
+  "title": "Disparity between morphology and genetics in<i>Urtica dioica</i>(Urticaceae)",
+  "year": 2020,
+  "journal": "Botanical Journal of the Linnean Society",
+  "first_author": "Rejlov\u00e1",
+  "volume": "195",
+  "crossref": true,
+  "doi_org": 302
+ },
+ {
+  "key": "cronk2016",
+  "doi": "10.3897/bdj.4.e10003",
+  "title": "Salix transect of Europe: variation in ploidy and genome size in willow-associated common nettle, Urtica dioica L. sens.",
+  "year": 2016,
+  "journal": "Biodiversity Data Journal",
+  "first_author": "Cronk",
+  "volume": "4",
+  "crossref": true,
+  "doi_org": 302
+ },
+ {
+  "key": "urfus2021",
+  "doi": "10.23855/preslia.2021.305",
+  "title": "Whole genome duplication increases ecological niche breadth of the perennial herb Urtica dioica",
+  "year": 2021,
+  "journal": "Preslia",
+  "first_author": "Urfus",
+  "volume": "93",
+  "crossref": true,
+  "doi_org": 302
+ },
+ {
+  "key": "grosseveldmann2015",
+  "doi": "10.11646/phytotaxa.208.4.1",
+  "title": "Weeding the nettles III: Named nonsense versus named morphotypes in European Urtica dioica L. (Urticaceae)",
+  "year": 2015,
+  "journal": "Phytotaxa",
+  "first_author": "Grosse-Veldmann",
+  "volume": "208",
+  "crossref": true,
+  "doi_org": 302
+ },
+ {
+  "key": "taylor2009",
+  "doi": "10.1111/j.1365-2745.2009.01575.x",
+  "title": "Biological Flora of the British Isles:\n                    <i>Urtica dioica</i>\n                    L.",
+  "year": 2009,
+  "journal": "Journal of Ecology",
+  "first_author": "Taylor",
+  "volume": "97",
+  "crossref": true,
+  "doi_org": 302
+ },
+ {
+  "key": "hirabayashi2025",
+  "doi": "10.3390/plants14010124",
+  "title": "A High-Quality Phased Genome Assembly of Stinging Nettle (Urtica dioica ssp. dioica)",
+  "year": 2025,
+  "journal": "Plants",
+  "first_author": "Hirabayashi",
+  "volume": "14",
+  "crossref": true,
+  "doi_org": 302
+ },
+ {
+  "key": "hirabayashi2026",
+  "doi": "10.1038/s41597-026-06960-7",
+  "title": "A haplotype-phased male genome sequence of the stinging nettle, Urtica dioica ssp. dioica",
+  "year": 2026,
+  "journal": "Scientific Data",
+  "first_author": "Hirabayashi",
+  "volume": "13",
+  "crossref": true,
+  "doi_org": 302
+ },
+ {
+  "key": "christenhusz2025",
+  "doi": "10.12688/wellcomeopenres.23399.1",
+  "title": "The genome sequence of the stinging nettle, Urtica dioica L. (Urticaceae)",
+  "year": 2025,
+  "journal": "Wellcome Open Research",
+  "first_author": "Christenhusz",
+  "volume": "10",
+  "crossref": true,
+  "doi_org": 302
+ },
+ {
+  "key": "christenhusz2024uu",
+  "doi": "10.12688/wellcomeopenres.23187.1",
+  "title": "The genome sequence of the small nettle, Urtica urens L. (Urticaceae)",
+  "year": 2024,
+  "journal": "Wellcome Open Research",
+  "first_author": "Christenhusz",
+  "volume": "9",
+  "crossref": true,
+  "doi_org": 302
+ },
+ {
+  "key": "christenhusz2024pj",
+  "doi": "10.12688/wellcomeopenres.23153.1",
+  "title": "The genome sequence of pellitory-of-the-wall, Parietaria judaica L. (Urticaceae)",
+  "year": 2024,
+  "journal": "Wellcome Open Research",
+  "first_author": "Christenhusz",
+  "volume": "9",
+  "crossref": true,
+  "doi_org": 302
+ },
+ {
+  "key": "wolff2026",
+  "doi": "10.64898/2026.05.15.725508",
+  "title": "Genome sequence of the medicinal plant\n                  <i>Urtica dioica</i>\n                  reveals the genetic basi",
+  "year": 2026,
+  "journal": "",
+  "first_author": "Wolff",
+  "volume": null,
+  "crossref": true,
+  "doi_org": 302
+ },
+ {
+  "key": "elphinstone2025",
+  "doi": "10.1111/1755-0998.14084",
+  "title": "<scp>RepeatOBserver</scp>\n                    : Tandem Repeat Visualisation and Putative Centromere Detection",
+  "year": 2025,
+  "journal": "Molecular Ecology Resources",
+  "first_author": "Elphinstone",
+  "volume": "25",
+  "crossref": true,
+  "doi_org": 302
+ },
+ {
+  "key": "castellani2024",
+  "doi": "10.1038/s41477-024-01625-y",
+  "title": "Meiotic recombination dynamics in plants with repeat-based holocentromeres shed light on the primary drivers of crossove",
+  "year": 2024,
+  "journal": "Nature Plants",
+  "first_author": "Castellani",
+  "volume": "10",
+  "crossref": true,
+  "doi_org": 302
+ },
+ {
+  "key": "hofstatter2022",
+  "doi": "10.1016/j.cell.2022.06.045",
+  "title": "Repeat-based holocentromeres influence genome architecture and karyotype evolution",
+  "year": 2022,
+  "journal": "Cell",
+  "first_author": "Hofstatter",
+  "volume": "185",
+  "crossref": true,
+  "doi_org": 302
+ },
+ {
+  "key": "macas2023",
+  "doi": "10.1371/journal.pgen.1010633",
+  "title": "Assembly of the 81.6 Mb centromere of pea chromosome 6 elucidates the structure and evolution of metapolycentric chromos",
+  "year": 2023,
+  "journal": "PLOS Genetics",
+  "first_author": "Macas",
+  "volume": "19",
+  "crossref": true,
+  "doi_org": 302
+ },
+ {
+  "key": "camacho2009",
+  "doi": "10.1186/1471-2105-10-421",
+  "title": "BLAST+: architecture and applications",
+  "year": 2009,
+  "journal": "BMC Bioinformatics",
+  "first_author": "Camacho",
+  "volume": "10",
+  "crossref": true,
+  "doi_org": 302
+ },
+ {
+  "key": "hartigan1985",
+  "doi": "10.1214/aos/1176346577",
+  "title": "The Dip Test of Unimodality",
+  "year": 1985,
+  "journal": "The Annals of Statistics",
+  "first_author": "Hartigan",
+  "volume": "13",
+  "crossref": true,
+  "doi_org": 302
+ }
+]

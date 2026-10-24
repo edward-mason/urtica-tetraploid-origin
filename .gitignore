@@ -1,0 +1,6 @@
+data/genomes/*.fna
+data/genomes/*.gz
+data/genomes/blastdb/
+results/divergence/blast_*.tsv
+results/divergence/anchored_*.json.gz
+results/divergence_trim0/

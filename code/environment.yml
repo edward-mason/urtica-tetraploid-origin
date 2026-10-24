@@ -1,0 +1,24 @@
+name: nettle
+channels: [conda-forge]
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+    - biopython==1.88
+    - pandas
+    - numpy
+    - scipy
+    - statsmodels
+    - scikit-learn
+    - matplotlib
+    - seaborn
+    - requests
+    - snakemake-minimal
+    - pyfamsa
+    - pyhmmer
+    - pyfastx
+    - diptest
+    - openpyxl
+    - pypdf
+# External binaries (Windows x64), downloaded by code/fetch_binaries.py into code/bin:
+#   NCBI BLAST+ 2.17.0 (ncbi-blast-2.17.0+-x64-win64.tar.gz, MD5 verified), PAML 4.10.10 (win-x86_64)

@@ -1,0 +1,13 @@
+{
+ "mode": "female",
+ "n_genes": 16685,
+ "acro_sig_gradient": 5,
+ "mean_T_acro": 0.6678547409994376,
+ "mean_T_poly": 0.3766556972585377,
+ "perm_p": 1.0,
+ "perm_total": 792,
+ "mean_rho_end_poly": -0.37061734686298803,
+ "mean_rho_acro": 0.22758608300426392,
+ "chr10_T": 0.3990331953760449,
+ "verdict": "falsified"
+}

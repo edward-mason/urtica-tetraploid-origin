@@ -1,0 +1,65 @@
+{
+ "n_S8": 1252,
+ "n_S13": 739,
+ "udi8_to_uur": {
+  "2.0": 1252
+ },
+ "udi13_to_uur": {
+  "2.0": 739
+ },
+ "control_pair": [
+  4,
+  6
+ ],
+ "outgroups": {
+  "PJU": {
+   "S8_dist": {
+    "1": 453,
+    "3": 423
+   },
+   "S13_dist": {
+    "5": 263,
+    "6": 219
+   },
+   "shared_chr": 1,
+   "frac8_on_shared": 0.5171232876712328,
+   "frac13_on_shared": 0.0,
+   "fission_supported": false,
+   "fusion_supported": false,
+   "top8": 1,
+   "top13": 5,
+   "control_pair_best_shared_chr": [
+    1.0,
+    0.0,
+    0.01098901098901099
+   ]
+  },
+  "CAN": {
+   "S8_dist": {
+    "1": 449,
+    "4": 151,
+    "8": 147,
+    "6": 25
+   },
+   "S13_dist": {
+    "10": 159,
+    "3": 147,
+    "7": 17,
+    "5": 5
+   },
+   "shared_chr": 1,
+   "frac8_on_shared": 0.5816062176165803,
+   "frac13_on_shared": 0.0,
+   "fission_supported": false,
+   "fusion_supported": false,
+   "top8": 1,
+   "top13": 10,
+   "control_pair_best_shared_chr": [
+    1.0,
+    0.07952069716775599,
+    0.0
+   ]
+  }
+ },
+ "verdict": "inconclusive (only 0/2 outgroups agree; rule needs >=2 incl. Parietaria)"
+}

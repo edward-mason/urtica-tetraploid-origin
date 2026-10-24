@@ -1,0 +1,80 @@
+# Snakefile — Urtica dioica comparative genomics (preregistered 2026-10-23)
+# Windows-native (BLAST+ 2.17.0 binaries in code/bin). Serial, delete-as-you-go: plain FASTA is removed after BLAST DB build.
+# Run: snakemake -s code/Snakefile --cores 8 all
+import json, os
+configfile: "code/config.yaml"
+TARGETS = config["targets"]          # FH1 FH2 MH1 MH2 DP DA UU BN
+OUTGROUPS = config["outgroups"]      # UUR PJU CAN
+rule all:
+    input: "results/divergence/h1_result_DP.json", "results/divergence/h1_result_DA.json",
+           "results/divergence/h1v2_result_DP.json", "results/divergence/h1v2_result_DA.json",
+           "results/divergence/copy_structure.json", "results/tables/copy_structure_v2.json",
+           "results/divergence/h3_result_female.json", "results/divergence/h3_result_male.json",
+           expand("results/synteny/blocks_UDI_{sp}.csv", sp=OUTGROUPS), "results/h2_result.json",
+           "paper/figures/Fig1_tetraploid_origin.png"
+# Optional sensitivity re-run without HSP end trimming (≈ 1 h; reuses the BLAST tables):
+#   set NETTLE_TRIM=0 and NETTLE_OUTDIR=results/divergence_trim0, then run summarise_target + distances + h1 for DP.
+rule download:
+    output: "data/genomes/download_log.tsv"
+    shell: "python code/download.py handoff/download_plan.json data/genomes"
+rule prepare_queries:
+    input: "data/genomes/download_log.tsv"
+    output: "results/divergence/query_cds.fa", "results/divergence/query_index.csv"
+    shell: "python code/gene_divergence.py prepare"
+rule blast_target:
+    input: "results/divergence/query_cds.fa"
+    output: "results/divergence/blast_{t}.tsv"
+    threads: 8
+    shell: "python code/gene_divergence.py blast {wildcards.t} && python -c \"import os,glob; [os.remove(f) for f in glob.glob('data/genomes/{wildcards.t}.fna')]\""
+rule summarise_target:
+    input: "results/divergence/blast_{t}.tsv"
+    output: "results/divergence/loci_{t}.csv", "results/divergence/anchored_{t}.json.gz"
+    shell: "python code/gene_divergence.py summarise {wildcards.t}"
+rule distances:
+    input: expand("results/divergence/loci_{t}.csv", t=TARGETS)
+    output: "results/divergence/gene_distances.csv"
+    shell: "python code/h1_distances.py " + " ".join(TARGETS)
+rule h1:
+    input: "results/divergence/gene_distances.csv"
+    output: "results/divergence/h1_result_{T}.json"
+    shell: "python code/h1_test.py {wildcards.T}"
+rule h1_v2:
+    # post-review statistics: chromosome-level CIs, paralog screen, adjacent-pair clustering, windowed paired scan, dip test, power model
+    input: "results/divergence/gene_distances.csv"
+    output: "results/divergence/h1v2_result_{T}.json", "results/divergence/h1v2_genes_{T}.csv"
+    shell: "python code/h1_test_v2.py {wildcards.T}"
+rule copy_structure:
+    input: expand("results/divergence/blast_{t}.tsv", t=TARGETS)
+    output: "results/divergence/copy_structure.json"
+    shell: "python code/copy_structure.py"
+rule copy_structure_v2:
+    # pooled (unphased-diploid and pooled-tetraploid) baselines and Bonn contig-length context
+    input: "results/divergence/copy_structure.json", expand("results/divergence/loci_{t}.csv", t=TARGETS)
+    output: "results/tables/copy_structure_v2.json"
+    shell: "python code/copy_structure_v2.py"
+rule figures:
+    input: "results/divergence/h1v2_result_DP.json", "results/divergence/h1v2_result_DA.json", "results/tables/copy_structure_v2.json",
+           "results/divergence/h3_result_female.json", "results/h2_result.json"
+    output: "paper/figures/Fig1_tetraploid_origin.png"
+    shell: "python code/make_figures.py"
+rule h3:
+    input: "results/divergence/gene_distances.csv", "data/annot/centromere_points.csv", "data/annot/centromere_points_male.csv"
+    output: "results/divergence/h3_result_{mode}.json"
+    shell: "python code/h3_test.py {wildcards.mode}"
+rule proteomes:
+    input: "data/genomes/download_log.tsv"
+    output: expand("results/synteny/{sp}.faa", sp=["UDI"]+OUTGROUPS)
+    shell: "python code/prep_proteomes.py"
+rule synteny_blast:
+    input: "results/synteny/UDI.faa", "results/synteny/{sp}.faa"
+    output: "results/synteny/rbh_UDI_{sp}.csv"
+    threads: 8
+    shell: "python code/h2_synteny.py blast {wildcards.sp}"
+rule synteny_blocks:
+    input: "results/synteny/rbh_UDI_{sp}.csv"
+    output: "results/synteny/blocks_UDI_{sp}.csv"
+    shell: "python code/h2_synteny.py blocks {wildcards.sp}"
+rule h2:
+    input: expand("results/synteny/blocks_UDI_{sp}.csv", sp=OUTGROUPS)
+    output: "results/h2_result.json"
+    shell: "python code/h2_test.py"

@@ -1,0 +1,14 @@
+hap,chr,class,cen_point,span_start,span_end,rule
+MH2,1,polycentric,40345000,34195000,46495000,span midpoint
+MH2,2,polycentric,9825000,2230000,17420000,span midpoint
+MH2,3,polycentric,28860000,27580000,30140000,span midpoint
+MH2,4,polycentric,34797500,31025000,38570000,span midpoint
+MH2,5,polycentric,12207500,11060000,13355000,span midpoint
+MH2,6,polycentric,16070000,10285000,21855000,span midpoint
+MH2,7,polycentric,16492500,15190000,17795000,span midpoint
+MH2,8,acrocentric,47127500,41945000,48350000,largest interval midpoint
+MH2,9,acrocentric,2662500,1850000,29465000,largest interval midpoint
+MH2,10,metacentric,11347500,10080000,12615000,span midpoint
+MH2,11,acrocentric,1470000,1250000,22945000,largest interval midpoint
+MH2,12,acrocentric,2890000,1795000,3985000,largest interval midpoint
+MH2,13,acrocentric,1352500,1250000,1455000,largest interval midpoint

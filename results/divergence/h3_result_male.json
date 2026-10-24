@@ -1,0 +1,19 @@
+{
+ "mode": "male",
+ "n_genes": 16654,
+ "acro_sig_gradient": 4,
+ "mean_T_acro": 0.7661782696655223,
+ "mean_T_poly": 0.4400324000600822,
+ "perm_p": 0.9835858585858586,
+ "perm_total": 792,
+ "mean_rho_end_poly": -0.3307496830988502,
+ "mean_rho_end_acro": -0.0924703798592661,
+ "mean_rho_acro": 0.16009353368333462,
+ "mean_rho_poly": 0.3205724015423623,
+ "chr10_T": 0.30324755634311423,
+ "perm_p_reverse": 0.017676767676767676,
+ "mean_T_excl2Mb_acro": 0.7455707152863335,
+ "mean_T_excl2Mb_poly": 0.4842579787653027,
+ "diff_T_excl2Mb": 0.26131273652103076,
+ "verdict": "falsified"
+}

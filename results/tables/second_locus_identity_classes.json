@@ -1,0 +1,44 @@
+{
+ "DP": {
+  "n_queries_with_best_locus": 23016,
+  "frac_2nd_cov80_pid80_90": 0.049226624956551966,
+  "frac_2nd_cov80_pid90_97": 0.10279805352798053,
+  "frac_2nd_cov80_pid_ge97": 0.2227146332985749
+ },
+ "DA": {
+  "n_queries_with_best_locus": 22898,
+  "frac_2nd_cov80_pid80_90": 0.0524063236963927,
+  "frac_2nd_cov80_pid90_97": 0.09939732727749148,
+  "frac_2nd_cov80_pid_ge97": 0.2137304568084549
+ },
+ "FH1": {
+  "n_queries_with_best_locus": 23111,
+  "frac_2nd_cov80_pid80_90": 0.05404352905542815,
+  "frac_2nd_cov80_pid90_97": 0.09463026264549348,
+  "frac_2nd_cov80_pid_ge97": 0.10159664229154948
+ },
+ "FH2": {
+  "n_queries_with_best_locus": 23112,
+  "frac_2nd_cov80_pid80_90": 0.056420906888196606,
+  "frac_2nd_cov80_pid90_97": 0.09778470058843891,
+  "frac_2nd_cov80_pid_ge97": 0.09640013845621322
+ },
+ "MH1": {
+  "n_queries_with_best_locus": 23112,
+  "frac_2nd_cov80_pid80_90": 0.05581516095534787,
+  "frac_2nd_cov80_pid90_97": 0.09782796815507096,
+  "frac_2nd_cov80_pid_ge97": 0.0986067843544479
+ },
+ "MH2": {
+  "n_queries_with_best_locus": 23131,
+  "frac_2nd_cov80_pid80_90": 0.05391033677748476,
+  "frac_2nd_cov80_pid90_97": 0.0935108728546107,
+  "frac_2nd_cov80_pid_ge97": 0.12208724222904327
+ },
+ "BN": {
+  "n_queries_with_best_locus": 23125,
+  "frac_2nd_cov80_pid80_90": 0.01932972972972973,
+  "frac_2nd_cov80_pid90_97": 0.08683243243243244,
+  "frac_2nd_cov80_pid_ge97": 0.7478486486486486
+ }
+}
